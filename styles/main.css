@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+/* TODO: Remove */
+/* div {
+    border: thin solid #888;
+} */
+
 html, body {
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -77,4 +82,25 @@ h6 {
 .btn-search {
     width: 2rem;
     height: 2rem;
+}
+
+.team-item {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-areas: 'item-title item-gen item-rating';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-title {
+    grid-area: item-title;
+}
+
+.item-gen {
+    grid-area: item-gen;
+    text-align: center;
+}
+
+.item-rating {
+    grid-area: item-rating;
+    text-align: right;
 }
