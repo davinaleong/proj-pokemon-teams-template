@@ -73,16 +73,13 @@
             "./assets/images/pokemon/raichu.png"
         ],
         "icon": "./assets/images/pokemon/icons/raichu-icon.png",
-        "forms": [
-            {
-                "region": "Alola",
-                "types": ["Electric", "Psychic"],
-                "images": [
-                    "./assets/images/pokemon/raichu_alola.gif",
-                    "./assets/images/pokemon/raichu_alola.png"
-                ],
-                "icon": "./assets/images/pokemon/icons/raichu_alola.png"
-            }
-        ]
+    }, {
+        "name": "Raichu (Alola)",
+        "types": ["Electric", "Psychic"],
+        "images": [
+            "./assets/images/pokemon/raichu_alola.gif",
+            "./assets/images/pokemon/raichu_alola.png"
+        ],
+        "icon": "./assets/images/pokemon/icons/raichu_alola.png"
     }
 ]
