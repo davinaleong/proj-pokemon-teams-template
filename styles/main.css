@@ -105,3 +105,17 @@ h6 {
     grid-area: item-rating;
     text-align: right;
 }
+
+ul.breadcrumb {
+    padding: 0.5rem;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 0.1rem;
+    content: '/\00a0';
+}
