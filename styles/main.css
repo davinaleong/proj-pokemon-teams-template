@@ -27,11 +27,13 @@ div#app {
 aside {
     border: thin solid #0f0;
     grid-area: aside;
+    padding: 0.5rem;
 }
 
 main {
     border: thin solid #00f;
     grid-area: main;
+    padding: 0.5rem;
 }
 
 h1, h2, h3, h4, h5, h6,
