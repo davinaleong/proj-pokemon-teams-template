@@ -121,3 +121,53 @@ ul.breadcrumb li+li:before {
     padding: 0.1rem;
     content: '/\00a0';
 }
+
+.container-gens {
+    margin-bottom: 1rem;
+}
+
+.gens-title {
+    font-size: 2.2rem;
+}
+
+.container-gens-cards {
+    display: flex;
+}
+
+.team-card {
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+    display: grid;
+    grid-template-areas: 
+        'card-title card-title card-title card-title card-gen card-gen'
+        'card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon card-pokemon'
+        'card-rating card-rating card-rating card-rating card-rating card-rating'
+    ;
+}
+
+.card-title {
+    grid-area: card-title;
+    font-size: 1.2rem;
+}
+
+.card-gen {
+    grid-area: card-gen;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.card-pokemon {
+    grid-area: card-pokemon;
+}
+
+.card-rating {
+    grid-area: card-rating;
+}
+
+.pokemon-icon {
+    display: inline-block;
+    padding: 0.25rem;
+}
