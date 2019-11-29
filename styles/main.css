@@ -88,6 +88,18 @@ a:hover {
     color: #1976d2; /* col primary dark */
 }
 
+img {
+    display: block;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 .font-body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -219,22 +231,54 @@ ul.breadcrumb li+li:before {
     padding: 0.25rem;
 }
 
-.text-amber {
-    color: #ffc107; /* col amber */
-}
+.text-amber { color: #ffc107; /* col amber */ }
 
-.text-yellow {
-    color: #ffeb3b; /* col yellow */
-}
+.text-yellow { color: #ffeb3b; /* col yellow */ }
 
 .text-muted {
     color: #9e9e9e; /* col secondary light */
     font-style: italic;
 }
 
-.text-secondary {
-    color: #9e9e9e; /* col secondary */
-}
+.text-secondary { color: #9e9e9e; /* col secondary */ }
+
+.text-bug { color: #a8b821; }
+.text-dark { color: #6f5848; }
+.text-dragon { color: #7038f9; }
+.text-electric { color: #f8d030; }
+.text-fairy { color: #ffaec9; }
+.text-fighting { color: #c03028; }
+.text-fire { color: #f07f2f; }
+.text-flying { color: #a890f0; }
+.text-ghost { color: #715899; }
+.text-grass { color: #78c750; }
+.text-ground { color: #debf67; }
+.text-ice { color: #98d8d8; }
+.text-normal { color: #a9a878; }
+.text-poison { color: #a040a1; }
+.text-psychic { color: #f85788; }
+.text-rock { color: #b89f38; }
+.text-steel { color: #b8b8d0; }
+.text-water { color: #6890f0; }
+
+.bg-bug { background-color: #a8b821; }
+.bg-dark { background-color: #6f5848; }
+.bg-dragon { background-color: #7038f9; }
+.bg-electric { background-color: #f8d030; }
+.bg-fairy { background-color: #ffaec9; }
+.bg-fighting { background-color: #c03028; }
+.bg-fire { background-color: #f07f2f; }
+.bg-flying { background-color: #a890f0; }
+.bg-ghost { background-color: #715899; }
+.bg-grass { background-color: #78c750; }
+.bg-ground { background-color: #debf67; }
+.bg-ice { background-color: #98d8d8; }
+.bg-normal { background-color: #a9a878; }
+.bg-poison { background-color: #a040a1; }
+.bg-psychic { background-color: #f85788; }
+.bg-rock { background-color: #b89f38; }
+.bg-steel { background-color: #b8b8d0; }
+.bg-water { background-color: #6890f0; }
 
 .team-subcontent {
     display: flex;
@@ -242,4 +286,68 @@ ul.breadcrumb li+li:before {
 
 .slot-gen {
     margin-right: 0.5rem;
+}
+
+.container-team-slots {
+    display: grid;
+    /* grid-template-areas:
+        'team-slot | team-slot | team-slot'
+        'team-slot | team-slot | team-slot'; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.team-slot {
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.2);
+    border-radius: var(--border-radius-small);
+}
+
+.pokemon-images {
+    display: grid;
+    grid-template-areas:
+        'cell-image cell-arrow cell-image-mega';
+    margin-bottom: 0.5rem;
+}
+
+.cell-image {
+    grid-area: cell-image;
+}
+
+.cell-arrow {
+    grid-area: cell-arrow;
+}
+
+.cell-image-mega {
+    grid-area: cell-image-mega;
+}
+
+.slot-nature, .slot-effort-values, .slot-individual-values {
+    margin-bottom: 0.5rem;
+}
+
+.slot-title {
+    font-size: 0.8rem;
+    color: #616161; /* col secondary dark */
+    margin-bottom: 0.3rem;
+}
+
+.slot-moves-item {
+    display: grid;
+    grid-template-areas:
+        'cell-moves cell-item';
+    margin-top: 1rem;
+}
+
+.cell-moves {
+    grid-area: cell-moves;
+}
+
+.cell-item {
+    grid-area: cell-item;
 }
