@@ -323,19 +323,27 @@ ul.breadcrumb li+li:before {
     display: grid;
     grid-template-areas:
         'cell-image cell-arrow cell-image-mega';
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .cell-image {
     grid-area: cell-image;
+    margin-bottom: 0.5rem;
 }
 
 .cell-arrow {
     grid-area: cell-arrow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell-image-mega {
     grid-area: cell-image-mega;
+}
+
+.cell-types {
+    margin-bottom: 0.3rem;
 }
 
 .slot-nature, .slot-effort-values, .slot-individual-values {
@@ -357,6 +365,10 @@ ul.breadcrumb li+li:before {
 
 .cell-moves {
     grid-area: cell-moves;
+}
+
+.cell-moves p {
+    margin-bottom: 0.3rem;
 }
 
 .cell-item {
