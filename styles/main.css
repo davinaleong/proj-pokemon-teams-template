@@ -33,19 +33,16 @@ html, body {
 }
 
 div#app {
-    border: thin solid #f00;
     display: grid;
     grid-template-areas: 'aside main main main main';
 }
 
 aside {
-    border: thin solid #0f0;
     grid-area: aside;
     padding: 0.5rem;
 }
 
 main {
-    border: thin solid #00f;
     grid-area: main;
     padding: 0.5rem;
 }
